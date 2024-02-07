@@ -1,0 +1,10 @@
+@mixin flex-list {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+@mixin a-reset {
+    text-decoration: none;
+    color: black;
+}
