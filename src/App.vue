@@ -9,6 +9,7 @@
         <DcNavbar></DcNavbar>
     </section>
     <DcFooter></DcFooter>
+    <DcSocials></DcSocials>
 </template>
 
 
@@ -18,12 +19,14 @@
 import DcHeader from '../src/components/DcHeader.vue';
 import DcNavbar from '../src/components/DcNavbar.vue';
 import DcFooter from '../src/components/DcFooter.vue';
+import DcSocials from '../src/components/DcSocials.vue';
 
 export default {
     components: {
         DcHeader,
         DcNavbar,
-        DcFooter
+        DcFooter,
+        DcSocials
     },
     data() {
         return {
@@ -40,11 +43,13 @@ export default {
 
 <style lang="scss">
 @use './styles/general.scss';
+@use './styles/partials/variables' as *;
 
 main {
     color: white;
     font-size: 40px;
-    margin-block: 30px;
+    margin-block: 42px;
     text-align: center;
+    background-color: $dc_background;
 }
 </style>

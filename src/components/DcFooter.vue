@@ -11,16 +11,22 @@
                             Characters
                         </li>
                         <li>
-                            Characters
+                            Comics
                         </li>
                         <li>
-                            Characters
+                            Movies
                         </li>
                         <li>
-                            Characters
+                            TV
                         </li>
                         <li>
-                            Characters
+                            Games
+                        </li>
+                        <li>
+                            Videos
+                        </li>
+                        <li>
+                            News
                         </li>
                     </ul>
                     <h3>
@@ -34,46 +40,64 @@
 
                 <div class="list-group">
                     <h3>
-                        DC COMICS
+                        DC
                     </h3>
                     <ul>
                         <li>
-                            Characters
+                            Terms Of Use
                         </li>
                         <li>
-                            Characters
+                            Privacy policy (new)
                         </li>
                         <li>
-                            Characters
+                            Ad choices
                         </li>
                         <li>
-                            Characters
+                            Advertising
                         </li>
                         <li>
-                            Characters
+                            Jobs
+                        </li>
+                        <li>
+                            Subscriptions
+                        </li>
+                        <li>
+                            Talent Workshops
+                        </li>
+                        <li>
+                            CPSC Certificates
+                        </li>
+                        <li>
+                            Ratings
+                        </li>
+                        <li>
+                            Shop help
+                        </li>
+                        <li>
+                            Contact us
                         </li>
                     </ul>
                 </div>
 
                 <div class="list-group">
                     <h3>
-                        DC COMICS
+                        SITES
                     </h3>
                     <ul>
                         <li>
-                            Characters
+                            DC
                         </li>
                         <li>
-                            Characters
+                            MAD Magazine
                         </li>
                         <li>
-                            Characters
+                            DC Kids
                         </li>
                         <li>
-                            Characters
+                            DC Universe
                         </li>
                         <li>
-                            Characters
+                            DC Power Visa
                         </li>
                     </ul>
                 </div>
@@ -102,33 +126,38 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-block: 3%;
+
 
     .section-container {
         width: 70%;
         margin: 0 auto;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
 
 
         .list-container {
+            padding-block: 1%;
             display: flex;
-            gap: 50px;
+            gap: 20px;
         }
 
         figure {
             background-image: url("../assets/img/dc-logo-bg.png");
-            height: 250px;
-            width: 250px;
-            border: 2px solid red;
-            background-size: cover;
+            width: 650px;
+            height: 350px;
+            background-position: center;
+            background-repeat: no-repeat;
         }
     }
 }
 
 .list-group {
+    font-size: 12px;
+
     h3 {
         color: white;
+        margin-top: 30px;
+        font-size: 18px;
     }
 
     ul {
