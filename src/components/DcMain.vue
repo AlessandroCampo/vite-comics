@@ -113,6 +113,12 @@ button {
     background-color: $dc_lightblue;
     padding-inline: 24px;
     padding-block: 8px;
+    cursor: pointer;
+
+    &:hover {
+        scale: 1.2;
+    }
+
 }
 
 button.load-more {

@@ -19,14 +19,16 @@ export default {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    align-items: start;
 
     img {
-        width: auto;
+        width: 100%;
         height: 200px;
     }
 
     h3 {
         font-size: 13px;
+        text-transform: uppercase;
     }
 }
 </style>

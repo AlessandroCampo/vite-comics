@@ -7,7 +7,7 @@
             <nav>
                 <ul>
                     <li v-for="(voice, index) in menu_voices" :key="index">
-                        <a :href="voice.link">{{ voice.name }}</a>
+                        <a :href="voice.link" :class="voice.active ? 'active' : ''">{{ voice.name }}</a>
                     </li>
 
                 </ul>
@@ -18,9 +18,15 @@
 
 <style scoped lang="scss">
 @use "../styles/partials/mixin";
+@use "../styles/partials/variables" as *;
 
 header {
     background-color: white;
+
+    .active {
+        color: $dc_lightblue;
+        border-bottom: 8px solid $dc_lightblue;
+    }
 
     .header-container {
         display: flex;
@@ -30,6 +36,7 @@ header {
         margin: 0 auto;
         margin-top: 20px;
         padding-block: 15px;
+        height: 14vh;
     }
 
     ul {
@@ -37,12 +44,23 @@ header {
         list-style: none;
         gap: 20px;
         font-weight: bold;
-        font-size: 13px;
+        font-size: 16px;
+        height: 100%;
 
-        a {
-            text-decoration: none;
-            color: #464646;
+        li {
+            a {
+                text-decoration: none;
+                color: #464646;
+                padding-bottom: calc(14vh / 2 - 16px);
+
+                &:hover {
+                    color: $dc_lightblue;
+                    border-bottom: 8px solid $dc_lightblue;
+                }
+            }
         }
+
+
     }
 
 
@@ -56,7 +74,7 @@ export default {
         return {
             menu_voices: [
                 { name: "CHARACTERS", link: "#", active: false },
-                { name: "COMICS", link: "#", active: false },
+                { name: "COMICS", link: "#", active: true },
                 { name: "MOVIES", link: "#", active: false },
                 { name: "TV", link: "#", active: false },
                 { name: "GAMES", link: "#", active: false },
