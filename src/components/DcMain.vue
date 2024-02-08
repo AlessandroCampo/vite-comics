@@ -2,6 +2,8 @@
     <section>
     </section>
     <div class="card-container">
+        <button class="current-series"> CURRENT SERIES </button>
+        <button class="load-more"> LOAD MORE </button>
         <DcCard v-for="(comic, index) in comics" :key="index" :comicThumb="comic.thumb" :comicTitle="comic.series"
             class="dcCard"></DcCard>
     </div>
@@ -96,10 +98,36 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+@use "../styles/partials/variables" as *;
+
 section {
     background-image: url("../assets/img/jumbotron.jpg");
     height: 45vh;
     background-size: cover;
+}
+
+button {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    background-color: $dc_lightblue;
+    padding-inline: 24px;
+    padding-block: 8px;
+}
+
+button.load-more {
+    font-size: 10px;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+button.current-series {
+    font-size: 10px;
+    top: 0%;
+    left: 0%;
+    font-size: 20px;
+    transform: translateY(-50%);
 }
 
 .card-container {
@@ -107,8 +135,9 @@ section {
     flex-wrap: wrap;
     width: 70%;
     margin: 0 auto;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
     gap: 25px;
+    position: relative;
 
     .dcCard {
         width: calc((100% - (6 - 1) * 25px) / 6);
