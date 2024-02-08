@@ -23,7 +23,7 @@ export default {
             socials: ["facebook", "periscope", "pinterest", "twitter", "youtube"]
         }
     },
-    methods: { // Change 'method' to 'methods'
+    methods: {
         generateSrc(string) {
             return `/src/assets/img/footer-${string}.png`
         }

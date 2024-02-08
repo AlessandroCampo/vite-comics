@@ -3,7 +3,7 @@
 <template>
     <DcHeader></DcHeader>
     <main>
-        ...Content goes here...
+        <DcMain></DcMain>
     </main>
     <section>
         <DcNavbar></DcNavbar>
@@ -20,13 +20,15 @@ import DcHeader from '../src/components/DcHeader.vue';
 import DcNavbar from '../src/components/DcNavbar.vue';
 import DcFooter from '../src/components/DcFooter.vue';
 import DcSocials from '../src/components/DcSocials.vue';
+import DcMain from '../src/components/DcMain.vue';
 
 export default {
     components: {
         DcHeader,
         DcNavbar,
         DcFooter,
-        DcSocials
+        DcSocials,
+        DcMain
     },
     data() {
         return {
@@ -48,7 +50,6 @@ export default {
 main {
     color: white;
     font-size: 40px;
-    margin-block: 42px;
     text-align: center;
     background-color: $dc_background;
 }
