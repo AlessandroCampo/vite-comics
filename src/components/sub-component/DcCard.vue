@@ -18,12 +18,12 @@ export default {
     width: calc(100% / 6);
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     align-items: start;
 
     img {
+        aspect-ratio: 2/2;
         width: 100%;
-        height: 200px;
     }
 
     h3 {
